@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ResearchTabDef>
+        <defName>ESCP_DwemerTab</defName>
+        <label>ESCP Dwemer</label>
+    </ResearchTabDef>
+
+    <ResearchProjectDef Abstract="True" Name="DwemerTechBase">
+        <techLevel>Medieval</techLevel>
+        <tab>ESCP_DwemerTab</tab>
+        <researchViewY>0</researchViewY>
+        <heldByFactionCategoryTags Inherit="False" />
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="DwemerTechBase">
+        <defName>ESCP_DwemerBasic</defName>
+        <label>Basic Dwemer Tech</label>
+        <description>PLACEHOLDER</description>
+        <baseCost>1600</baseCost>
+        <researchViewX>1</researchViewX>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->PLACEHOLDER</li>
+
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+
+                <li>subject_gerund->PLACEHOLDER</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="DwemerTechBase">
+        <defName>ESCP_DwemerIntermediate</defName>
+        <label>Intermediate Dwemer Tech</label>
+        <description>PLACEHOLDER</description>
+        <baseCost>1000</baseCost>
+        <researchViewX>2.00</researchViewX>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->PLACEHOLDER</li>
+
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+
+                <li>subject_gerund->PLACEHOLDER</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="DwemerTechBase">
+        <defName>ESCP_DwemerAdvanced</defName>
+        <label>Advanced Dwemer Tech</label>
+        <description>PLACEHOLDER</description>
+        <baseCost>1000</baseCost>
+        <researchViewX>3.00</researchViewX>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->PLACEHOLDER</li>
+
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+
+                <li>subject_gerund->PLACEHOLDER</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="DwemerTechBase">
+        <defName>ESCP_DwemerTonal</defName>
+        <label>Tonal Architecture</label>
+        <description>PLACEHOLDER</description>
+        <baseCost>5000</baseCost>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>0.30</researchViewY>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->PLACEHOLDER</li>
+
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+
+                <li>subject_gerund->PLACEHOLDER</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+</Defs>

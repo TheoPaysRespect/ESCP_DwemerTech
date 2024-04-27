@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--pipes-->
+
+    <!--generators-->
+
+    <!--steam generators-->
+
+    <!--lamps-->
+    <ThingDef ParentName = "LampBase" Name="DwemerLampBase" Abstract="true">
+        <researchPrerequisites Inherit="false">
+            <li>ESCP_DwemerBasic</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="DwemerLampBase">
+        <defName>ESCP_Dwemer_StandingLamp</defName>
+        <label>dwemer standing lamp</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/LampStanding</texPath>
+            <shadowData>
+                <volume>(0.3, 0.6, 0.3)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+        <costList>
+            <ESCP_DwemerMetalIngot>20</ESCP_DwemerMetalIngot>
+        </costList>
+        <statBases>
+            <Mass>4</Mass>
+            <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">5</StyleDominance>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>30</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>12</glowRadius>
+                <glowColor>(214,148,94,0)</glowColor>
+                <colorPickerEnabled>true</colorPickerEnabled>
+                <darklightToggle>true</darklightToggle>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DwemerLampBase">
+        <defName>ESCP_Dwemer_WallLamp</defName>
+        <label>dwemer wall lamp</label>
+        <description>PLACEHOLDER</description>
+        <rotatable>true</rotatable>
+        <graphicData>
+            <texPath>Things/Building/Furniture/WallLamp/WallLamp</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+            <drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+            <drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+            <drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+            <damageData>
+                <enabled>false</enabled>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Furniture/WallLamp/WallLamp_MenuIcon</uiIconPath>
+        <altitudeLayer>BuildingOnTop</altitudeLayer>
+        <costList>
+            <ESCP_DwemerMetalIngot>15</ESCP_DwemerMetalIngot>
+        </costList>
+        <statBases>
+            <WorkToBuild>330</WorkToBuild>
+            <MaxHitPoints>35</MaxHitPoints>
+            <Mass>2</Mass>
+        </statBases>
+        <passability>Standable</passability>
+        <terrainAffordanceNeeded IsNull="True" />
+        <pathCost>0</pathCost>
+        <overrideMinifiedRot>North</overrideMinifiedRot>
+        <minifiedDrawOffset>(0, 0, 0.2)</minifiedDrawOffset>
+        <building>
+            <isEdifice>false</isEdifice>
+            <isAttachment>true</isAttachment>
+        </building>
+        <placeWorkers>
+            <li>Placeworker_AttachedToWall</li>
+        </placeWorkers>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>30</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Styleable" />
+            <li Class="CompProperties_Glower">
+                <glowRadius>11</glowRadius>
+                <glowColor>(214,148,94,0)</glowColor>
+                <colorPickerEnabled>true</colorPickerEnabled>
+                <darklightToggle>true</darklightToggle>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="DwemerLampBase">
+        <defName>ESCP_Dwemer_SunLamp</defName>
+        <label>dwemer sun lamp</label>
+        <description>PLACEHOLDER</description>
+        <thingClass>Building_SunLamp</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Production/LampSun</texPath>
+            <shadowData>
+                <volume>(0.3, 0.6, 0.3)</volume>
+                <offset>(0,0,-0.1)</offset>
+            </shadowData>
+        </graphicData>
+        <blockWind>true</blockWind>
+        <tickerType>Rare</tickerType>
+        <statBases>
+            <WorkToBuild>330</WorkToBuild>
+            <Mass>4.5</Mass>
+        </statBases>
+        <costList>
+            <ESCP_DwemerMetalIngot>40</ESCP_DwemerMetalIngot>
+        </costList>
+        <comps>
+            <li Class="CompProperties_Glower">
+                <overlightRadius>7.0</overlightRadius>
+                <glowRadius>14</glowRadius>
+                <glowColor>(370,370,370,0)</glowColor>
+            </li>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>2900</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Schedule">
+                <!-- Match plant growing times -->
+                <startTime>0.25</startTime>
+                <endTime>0.8</endTime>
+                <offMessage>Off for plant resting period</offMessage>
+            </li>
+            <li Class="CompProperties_HeatPusher">
+                <compClass>CompHeatPusherPowered</compClass>
+                <heatPerSecond>3</heatPerSecond>
+            </li>
+        </comps>
+        <!-- Determined by trial and error
+    This value isn't perfect because these radii use different algorithms
+    but it matches in this case-->
+        <specialDisplayRadius>5.8</specialDisplayRadius>
+    </ThingDef>
+
+    <ThingDef ParentName="DwemerLampBase">
+        <defName>ESCP_Dwemer_FloodLamp</defName>
+        <label>dwemer flood light</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+            <texPath>Things/Building/Furniture/FloodLight</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.5</drawSize>
+            <addTopAltitudeBias>true</addTopAltitudeBias>
+            <shadowData>
+                <volume>(0.2, 0.7, 0.2)</volume>
+                <offset>(0, 0, -0.2)</offset>
+            </shadowData>
+        </graphicData>
+        <uiIconScale>0.75</uiIconScale>
+        <costList>
+            <ESCP_DwemerMetalIngot>50</ESCP_DwemerMetalIngot>
+        </costList>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToBuild>600</WorkToBuild>
+            <Flammability>0</Flammability>
+            <Mass>10</Mass>
+            <Beauty>-5</Beauty>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>100</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Glower">
+                <glowRadius>24</glowRadius>
+                <glowColor>(214,148,94,0)</glowColor>
+                <colorPickerEnabled>true</colorPickerEnabled>
+                <darklightToggle>true</darklightToggle>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <!--temperature control-->
+</Defs>
