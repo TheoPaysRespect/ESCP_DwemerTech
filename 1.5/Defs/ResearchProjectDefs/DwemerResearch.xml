@@ -39,6 +39,9 @@
         <description>PLACEHOLDER</description>
         <baseCost>1000</baseCost>
         <researchViewX>2.00</researchViewX>
+        <prerequisites>
+            <li>ESCP_DwemerBasic</li>
+        </prerequisites>
         <generalRules>
             <rulesStrings>
                 <li>subject->PLACEHOLDER</li>
@@ -59,6 +62,9 @@
         <description>PLACEHOLDER</description>
         <baseCost>1000</baseCost>
         <researchViewX>3.00</researchViewX>
+        <prerequisites>
+            <li>ESCP_DwemerIntermediate</li>
+        </prerequisites>
         <generalRules>
             <rulesStrings>
                 <li>subject->PLACEHOLDER</li>
@@ -80,6 +86,9 @@
         <baseCost>5000</baseCost>
         <researchViewX>4.00</researchViewX>
         <researchViewY>0.30</researchViewY>
+        <prerequisites>
+            <li>ESCP_DwemerAdvanced</li>
+        </prerequisites>
         <generalRules>
             <rulesStrings>
                 <li>subject->PLACEHOLDER</li>
