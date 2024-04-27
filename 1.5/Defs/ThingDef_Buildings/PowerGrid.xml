@@ -8,7 +8,7 @@
         <thingClass>Building</thingClass>
         <category>Building</category>
         <graphicData>
-            <texPath>Things/Building/Linked/PowerConduit_Atlas</texPath>
+            <texPath>Things/Building/Linked/Dwemer_Pipes_Atlas</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <linkType>Transmitter</linkType>
             <linkFlags> <!--replace with steam-->

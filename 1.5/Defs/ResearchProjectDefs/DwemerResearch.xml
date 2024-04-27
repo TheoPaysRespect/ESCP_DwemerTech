@@ -19,6 +19,9 @@
         <description>PLACEHOLDER</description>
         <baseCost>1600</baseCost>
         <researchViewX>1</researchViewX>
+        <prerequisites>
+            <li>Smithing</li>
+        </prerequisites>
         <generalRules>
             <rulesStrings>
                 <li>subject->PLACEHOLDER</li>
