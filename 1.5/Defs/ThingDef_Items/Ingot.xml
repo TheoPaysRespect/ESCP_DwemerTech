@@ -45,7 +45,7 @@
             <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
             <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
             <statFactors>
-                <MaxHitPoints>5</MaxHitPoints>
+                <MaxHitPoints>3.7</MaxHitPoints>
                 <Beauty>2</Beauty>
                 <Flammability>0</Flammability>
                 <WorkToMake>2.2</WorkToMake>
