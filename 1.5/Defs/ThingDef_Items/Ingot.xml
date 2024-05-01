@@ -16,13 +16,12 @@
             <RoyalFavorValue>0.1</RoyalFavorValue>
             <MarketValue>30</MarketValue>
             <Mass>1</Mass>
-            <StuffPower_Armor_Sharp>1.2</StuffPower_Armor_Sharp>
-            <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
-            <StuffPower_Armor_Heat>1.5</StuffPower_Armor_Heat>
-            <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
-            <StuffPower_Insulation_Heat>10</StuffPower_Insulation_Heat>
-            <SharpDamageMultiplier>1.4</SharpDamageMultiplier>
-            <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+            <StuffPower_Armor_Sharp>1.22</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.12</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>1</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+            <SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+            <BluntDamageMultiplier>1.35</BluntDamageMultiplier>
         </statBases>
         <thingCategories>
             <li>ResourcesRaw</li>
@@ -34,7 +33,7 @@
         <stuffProps>
             <categories>
                 <li>Metallic</li>
-                <!--<li>ESCP_Dwemer</li>-->
+                <!--<li>ESCP_Dwemer_Material</li>-->
             </categories>
             <appearance>Metal</appearance>
             <commonality>0.01</commonality>
@@ -45,7 +44,7 @@
             <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
             <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
             <statFactors>
-                <MaxHitPoints>3.7</MaxHitPoints>
+                <MaxHitPoints>2.6</MaxHitPoints>
                 <Beauty>2</Beauty>
                 <Flammability>0</Flammability>
                 <WorkToMake>2.2</WorkToMake>
