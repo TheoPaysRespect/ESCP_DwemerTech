@@ -218,6 +218,7 @@
                 </li>
                 <li>
                     <def>Reactor</def>
+                    <label>soul gem core</label>
                     <coverage>0.08</coverage>
                     <depth>Inside</depth>
                 </li>
@@ -234,4 +235,141 @@
             </parts>
         </corePart>
     </BodyDef>
+
+    <BodyDef>
+        <defName>ESCP_Sphere</defName>
+        <label>sphere</label>
+        <corePart>
+            <def>MechanicalThorax</def>
+            <height>Middle</height>
+            <depth>Outside</depth>
+            <parts>
+                <li>
+                    <def>MechanicalNeck</def>
+                    <coverage>0.10</coverage>
+                    <height>Top</height>
+                    <parts>
+                        <li>
+                            <def>MechanicalHead</def>
+                            <coverage>0.80</coverage>
+                            <groups>
+                                <li>HeadAttackTool</li>
+                            </groups>
+                            <parts>
+                                <li>
+                                    <def>ArtificialBrain</def>
+                                    <coverage>0.10</coverage>
+                                    <depth>Inside</depth>
+                                </li>
+                                <li>
+                                    <def>SightSensor</def>
+                                    <customLabel>left sight sensor</customLabel>
+                                    <coverage>0.13</coverage>
+                                </li>
+                                <li>
+                                    <def>SightSensor</def>
+                                    <customLabel>right sight sensor</customLabel>
+                                    <coverage>0.13</coverage>
+                                </li>
+                                <li>
+                                    <def>HearingSensor</def>
+                                    <customLabel>left hearing sensor</customLabel>
+                                    <coverage>0.10</coverage>
+                                </li>
+                                <li>
+                                    <def>HearingSensor</def>
+                                    <customLabel>right hearing sensor</customLabel>
+                                    <coverage>0.10</coverage>
+                                </li>
+                                <li>
+                                    <def>SmellSensor</def>
+                                    <coverage>0.10</coverage>
+                                </li>
+                            </parts>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <def>MechanicalShoulder</def>
+                    <customLabel>left shoulder</customLabel>
+                    <coverage>0.17</coverage>
+                    <parts>
+                        <li>
+                            <def>MechanicalArm</def>
+                            <customLabel>left arm</customLabel>
+                            <coverage>0.85</coverage>
+                            <groups>
+                                <li>ESCP_SphereLeftArm</li>
+                            </groups>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <def>MechanicalShoulder</def>
+                    <customLabel>right shoulder</customLabel>
+                    <coverage>0.17</coverage>
+                    <parts>
+                        <li>
+                            <def>MechanicalArm</def>
+                            <customLabel>right arm</customLabel>
+                            <coverage>0.85</coverage>
+                            <groups>
+                                <li>ESCP_SphereRightArm</li>
+                            </groups>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <def>MechanicalSphere</def>
+                    <customLabel>sphere</customLabel>
+                    <coverage>1</coverage>
+                    <height>Bottom</height>
+                </li>
+                <li>
+                    <def>Reactor</def>
+                    <label>soul gem core</label>
+                    <coverage>0.06</coverage>
+                    <depth>Inside</depth>
+                </li>
+                <li>
+                    <def>FluidReprocessor</def>
+                    <coverage>0.04</coverage>
+                    <depth>Inside</depth>
+                </li>
+                <li>
+                    <def>FluidReprocessor</def>
+                    <coverage>0.04</coverage>
+                    <depth>Inside</depth>
+                </li>
+            </parts>
+        </corePart>
+    </BodyDef>
+
+    <BodyPartGroupDef>
+        <defName>ESCP_SphereLeftArm</defName>
+        <label>Sphere left arm</label>
+        <listOrder>80</listOrder>
+    </BodyPartGroupDef>
+
+    <BodyPartGroupDef>
+        <defName>ESCP_SphereRightArm</defName>
+        <label>Sphere right arm</label>
+        <listOrder>80</listOrder>
+    </BodyPartGroupDef>
+
+    <BodyPartDef>
+        <defName>MechanicalSphere</defName>
+        <label>sphere</label>
+        <description>The lower part of a sphere, source of its name.</description>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <hitPoints>60</hitPoints>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>MovingLimbCore</li>
+        </tags>
+    </BodyPartDef>
+
+
 </Defs>

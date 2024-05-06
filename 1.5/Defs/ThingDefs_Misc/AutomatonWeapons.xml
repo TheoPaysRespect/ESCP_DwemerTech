@@ -9,13 +9,36 @@
             <texPath>Things/Items/Weapons/DwemerSphereSword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
-            <drawSize>0.5</drawSize>
+            <drawSize>0.6</drawSize>
         </graphicData>
         <uiIconScale>1</uiIconScale>
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0,0.0,0.20)</drawOffset>                        <!--0.30,0,0.40-->
+                    </north>
+                    <east>
+                        <drawOffset>(0.0,0.00,0.20)</drawOffset>                        <!--0.30,0.2,0.40-->
+                    </east>
+                    <south>
+                        <drawOffset>(0.0,0.00,0.20)</drawOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(0.0,0.0,0.20)</drawOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+                <usableWithShields>true</usableWithShields>
+            </li>
+        </modExtensions>
+        
         <techLevel>Medieval</techLevel>
         <statBases>
             <Mass>2</Mass>
         </statBases>
+        <costList>
+            <ESCP_DwemerMetalIngot>20</ESCP_DwemerMetalIngot>
+        </costList>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <tradeability>None</tradeability>
         <destroyOnDrop>true</destroyOnDrop>
@@ -43,11 +66,6 @@
                 <armorPenetration>0.25</armorPenetration>
             </li>
         </tools>
-        <modExtensions>
-            <li Class="VFECore.ThingDefExtension">
-                <usableWithShields>true</usableWithShields>
-            </li>
-        </modExtensions>
     </ThingDef>
 
     <!--ranged-->
@@ -60,6 +78,26 @@
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>0.5</drawSize>
         </graphicData>
+
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0,0.0,0.20)</drawOffset>                        <!--0.30,0,0.40-->
+                    </north>
+                    <east>
+                        <drawOffset>(0.0,0.00,0.20)</drawOffset>                        <!--0.30,0.2,0.40-->
+                    </east>
+                    <south>
+                        <drawOffset>(0.0,0.00,0.20)</drawOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(0.0,0.0,0.20)</drawOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
+
         <soundInteract>Bow_Recurve</soundInteract>
         <tradeability>None</tradeability>
         <destroyOnDrop>true</destroyOnDrop>
@@ -72,6 +110,9 @@
             <AccuracyLong>0.38</AccuracyLong>
             <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
         </statBases>
+        <costList>
+            <ESCP_DwemerMetalIngot>20</ESCP_DwemerMetalIngot>
+        </costList>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <equippedStatOffsets>
             <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
@@ -116,6 +157,26 @@
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>0.5</drawSize>
         </graphicData>
+        
+        <modExtensions>
+            <li Class="VFECore.ThingDefExtension">
+                <weaponDraftedDrawOffsets>
+                    <north>
+                        <drawOffset>(0,0.0,0.20)</drawOffset>                        <!--0.30,0,0.40-->
+                    </north>
+                    <east>
+                        <drawOffset>(0.0,0.00,0.20)</drawOffset>                        <!--0.30,0.2,0.40-->
+                    </east>
+                    <south>
+                        <drawOffset>(0.0,0.00,0.20)</drawOffset>
+                    </south>
+                    <west>
+                        <drawOffset>(0.0,0.0,0.20)</drawOffset>
+                    </west>
+                </weaponDraftedDrawOffsets>
+            </li>
+        </modExtensions>
+
         <tradeability>None</tradeability>
         <destroyOnDrop>true</destroyOnDrop>
         <statBases>
@@ -125,11 +186,14 @@
             <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
             <Mass>2.5</Mass>
         </statBases>
+        <costList>
+            <ESCP_DwemerMetalIngot>20</ESCP_DwemerMetalIngot>
+        </costList>
         <techLevel>Medieval</techLevel>
         <thingClass>VFECore.Apparel_Shield</thingClass>
         <apparel>
             <bodyPartGroups>
-                <li>LeftHand</li>
+                <li>ESCP_SphereLeftArm</li>
             </bodyPartGroups>
             <layers>
                 <li>VFEC_OuterShell</li>
