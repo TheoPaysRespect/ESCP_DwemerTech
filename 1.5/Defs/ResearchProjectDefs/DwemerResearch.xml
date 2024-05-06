@@ -9,7 +9,6 @@
     <ResearchProjectDef Abstract="True" Name="DwemerTechBase">
         <techLevel>Medieval</techLevel>
         <tab>ESCP_DwemerTab</tab>
-        <researchViewY>0</researchViewY>
         <heldByFactionCategoryTags Inherit="False" />
     </ResearchProjectDef>
 
@@ -17,7 +16,8 @@
         <defName>ESCP_DwemerBasic</defName>
         <label>Basic Dwemer Tech</label>
         <description>PLACEHOLDER</description>
-        <baseCost>1600</baseCost>
+        <baseCost>2000</baseCost>
+        <researchViewY>3</researchViewY>
         <researchViewX>1</researchViewX>
         <prerequisites>
             <li>Smithing</li>
@@ -40,7 +40,8 @@
         <defName>ESCP_DwemerIntermediate</defName>
         <label>Intermediate Dwemer Tech</label>
         <description>PLACEHOLDER</description>
-        <baseCost>1000</baseCost>
+        <baseCost>2000</baseCost>
+        <researchViewY>3</researchViewY>
         <researchViewX>2.00</researchViewX>
         <prerequisites>
             <li>ESCP_DwemerBasic</li>
@@ -63,7 +64,8 @@
         <defName>ESCP_DwemerAdvanced</defName>
         <label>Advanced Dwemer Tech</label>
         <description>PLACEHOLDER</description>
-        <baseCost>1000</baseCost>
+        <baseCost>2000</baseCost>
+        <researchViewY>3</researchViewY>
         <researchViewX>3.00</researchViewX>
         <prerequisites>
             <li>ESCP_DwemerIntermediate</li>
@@ -86,9 +88,9 @@
         <defName>ESCP_DwemerTonal</defName>
         <label>Tonal Architecture</label>
         <description>PLACEHOLDER</description>
-        <baseCost>5000</baseCost>
+        <baseCost>4000</baseCost>
         <researchViewX>4.00</researchViewX>
-        <researchViewY>0.30</researchViewY>
+        <researchViewY>2</researchViewY>
         <prerequisites>
             <li>ESCP_DwemerAdvanced</li>
         </prerequisites>
@@ -105,4 +107,149 @@
             </rulesStrings>
         </generalRules>
     </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="DwemerTechBase">
+        <defName>ESCP_DwemerAetherium</defName>
+        <label>Aetherium Research</label>
+        <description>PLACEHOLDER</description>
+        <baseCost>4000</baseCost>
+        <researchViewX>4.00</researchViewX>
+        <researchViewY>4</researchViewY>
+        <prerequisites>
+            <li>ESCP_DwemerAdvanced</li>
+        </prerequisites>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->PLACEHOLDER</li>
+
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+
+                <li>subject_gerund->PLACEHOLDER</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="DwemerTechBase">
+        <defName>ESCP_DwemerArmory1</defName>
+        <label>Simple Dwemer Armor</label>
+        <description>PLACEHOLDER</description>
+        <baseCost>1000</baseCost>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2</researchViewY>
+        <prerequisites>
+            <li>ESCP_DwemerBasic</li>
+        </prerequisites>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->PLACEHOLDER</li>
+
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+
+                <li>subject_gerund->PLACEHOLDER</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="DwemerTechBase">
+        <defName>ESCP_DwemerWeapons1</defName>
+        <label>Dwemer Weapons</label>
+        <description>PLACEHOLDER</description>
+        <baseCost>1000</baseCost>
+        <researchViewX>2</researchViewX>
+        <researchViewY>4</researchViewY>
+        <prerequisites>
+            <li>ESCP_DwemerBasic</li>
+        </prerequisites>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->PLACEHOLDER</li>
+
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+
+                <li>subject_gerund->PLACEHOLDER</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="DwemerTechBase">
+        <defName>ESCP_DwemerClothing</defName>
+        <label>Dwemer Clothing</label>
+        <description>PLACEHOLDER</description>
+        <baseCost>400</baseCost>
+        <researchViewX>1</researchViewX>
+        <researchViewY>2</researchViewY>
+        <prerequisites>
+            <li>ComplexClothing</li> <!--mo patch-->
+        </prerequisites>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->PLACEHOLDER</li>
+
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+
+                <li>subject_gerund->PLACEHOLDER</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="DwemerTechBase">
+        <defName>ESCP_DwemerFurniture</defName>
+        <label>Dwemer Furniture</label>
+        <description>PLACEHOLDER</description>
+        <baseCost>500</baseCost>
+        <researchViewX>1</researchViewX>
+        <researchViewY>4</researchViewY>
+        <prerequisites>
+            <li>ComplexFurniture</li>
+        </prerequisites>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->PLACEHOLDER</li>
+
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+
+                <li>subject_gerund->PLACEHOLDER</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="DwemerTechBase">
+        <defName>ESCP_DwemerArmory2</defName>
+        <label>Advanced Dwemer Armor</label>
+        <description>PLACEHOLDER</description>
+        <baseCost>1000</baseCost>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2</researchViewY>
+        <prerequisites>
+            <li>ESCP_DwemerArmory1</li>
+        </prerequisites>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->PLACEHOLDER</li>
+
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+                <li>subject_story->PLACEHOLDER</li>
+
+                <li>subject_gerund->PLACEHOLDER</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+
 </Defs>

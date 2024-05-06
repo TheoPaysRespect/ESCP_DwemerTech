@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <FactionDef ParentName="FactionBase">
+        <defName>DwemerRemnants</defName>
+        <label>Dwemer Remnants</label>
+        <description>Once serving as tools of the great Dwemer, this group of mechanoids got left behind in abandoned settlements. Without maintenance, they ended up going haywire.</description>
+        <pawnSingular>automaton</pawnSingular>
+        <pawnsPlural>automatons</pawnsPlural>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <factionNameMaker>NamerFactionMechanoid</factionNameMaker>
+        <factionIconPath>World/WorldObjects/Expanding/Mechanoids</factionIconPath>
+        <colorSpectrum>
+            <li>(0.78, 0.79, 0.71)</li>
+        </colorSpectrum>
+        <raidCommonalityFromPointsCurve>
+            <points>
+                <li>(0, 0)</li>
+            </points>
+        </raidCommonalityFromPointsCurve>
+        <raidLootMaker>MechanoidRaidLootMaker</raidLootMaker>
+        <raidLootValueFromPointsCurve>
+            <points>
+                <li>(35,     8)</li>
+                <li>(100,   60)</li>
+                <li>(1000, 250)</li>
+                <li>(2000, 400)</li>
+                <li>(4000, 500)</li>
+            </points>
+        </raidLootValueFromPointsCurve>
+        <humanlikeFaction>false</humanlikeFaction>
+        <hidden>true</hidden>
+        <autoFlee>false</autoFlee>
+        <canUseAvoidGrid>false</canUseAvoidGrid>
+        <techLevel>Medieval</techLevel>
+        <permanentEnemy>true</permanentEnemy>
+        <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>900</configurationListOrderPriority>
+    </FactionDef>
+</Defs>

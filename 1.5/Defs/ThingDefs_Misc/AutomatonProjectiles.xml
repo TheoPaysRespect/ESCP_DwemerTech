@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BaseProjectileNeolithic">
+        <defName>ESCP_DwemerSphereBolt</defName>
+        <label>dwemer sphere bolt</label>
+        <graphicData>
+            <texPath>Things/Items/Weapons/DwemerSphereBolt</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>ArrowHighVelocity</damageDef>
+            <damageAmountBase>21</damageAmountBase>
+            <stoppingPower>2</stoppingPower>
+            <armorPenetrationBase>0.25</armorPenetrationBase>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
+</Defs>

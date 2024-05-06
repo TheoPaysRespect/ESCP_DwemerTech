@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!--ingots-->
+    <!--ingots-->
     <ThingDef ParentName="ResourceBase">
         <defName>ESCP_DwemerMetalIngot</defName>
         <label>Dwemer metal ingot</label>
@@ -120,7 +120,7 @@
         </tradeTags>
     </ThingDef>
 
-<!--components-->
+    <!--components-->
     <ThingDef ParentName="ResourceBase">
         <defName>ESCP_ControlCube</defName>
         <label>Control Cube</label>
@@ -144,8 +144,6 @@
         <thingCategories>
             <li>Manufactured</li>
         </thingCategories>
-        <allowedArchonexusCount>10</allowedArchonexusCount>
-        </stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>60</allowedArchonexusCount>
         <tradeTags>
@@ -176,13 +174,11 @@
         <thingCategories>
             <li>Manufactured</li>
         </thingCategories>
-        <allowedArchonexusCount>10</allowedArchonexusCount>
-    </stuffProps>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <allowedArchonexusCount>60</allowedArchonexusCount>
-    <tradeTags>
-        <li>Dwemer</li>
-    </tradeTags>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <allowedArchonexusCount>60</allowedArchonexusCount>
+        <tradeTags>
+            <li>Dwemer</li>
+        </tradeTags>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
@@ -208,16 +204,14 @@
         <thingCategories>
             <li>Manufactured</li>
         </thingCategories>
-        <allowedArchonexusCount>10</allowedArchonexusCount>
-    </stuffProps>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <allowedArchonexusCount>60</allowedArchonexusCount>
-    <tradeTags>
-        <li>Dwemer</li>
-    </tradeTags>
+        <allowedArchonexusCount>60</allowedArchonexusCount>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <tradeTags>
+            <li>Dwemer</li>
+        </tradeTags>
     </ThingDef>
 
-<!--oil-->
+    <!--oil-->
     <ThingDef ParentName="ResourceBase">
         <defName>ESCP_DwemerOil</defName>
         <label>Dwemer Oil</label>
@@ -258,5 +252,5 @@
         <allowedArchonexusCount>100</allowedArchonexusCount>
     </ThingDef>
 
-    
+
 </Defs>
