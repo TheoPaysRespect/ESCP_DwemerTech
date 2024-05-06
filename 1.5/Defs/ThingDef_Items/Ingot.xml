@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+<!--ingots-->
     <ThingDef ParentName="ResourceBase">
         <defName>ESCP_DwemerMetalIngot</defName>
         <label>Dwemer metal ingot</label>
@@ -58,4 +60,203 @@
             <li>Dwemer</li>
         </tradeTags>
     </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>ESCP_DwemerAetheriumIngot</defName>
+        <label>Aetherium Ingot</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+            <texPath>Things/Items/Resources/DwemerAetheriumIngot</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <RoyalFavorValue>0.1</RoyalFavorValue>
+            <MarketValue>30</MarketValue>
+            <Mass>1</Mass>
+            <StuffPower_Armor_Sharp>1.22</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>1.12</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>1</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+            <SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+            <BluntDamageMultiplier>1.35</BluntDamageMultiplier>
+        </statBases>
+        <thingCategories>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <possessionCount>5</possessionCount>
+        <minRewardCount>10</minRewardCount>
+        <stuffProps>
+            <categories>
+                <li>Metallic</li>
+                <!--<li>ESCP_Dwemer_Material</li>-->
+            </categories>
+            <appearance>Metal</appearance>
+            <commonality>0.01</commonality>
+            <constructEffect>ConstructMetal</constructEffect>
+            <color>(157,130,68)</color>
+            <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+            <statFactors>
+                <MaxHitPoints>2.6</MaxHitPoints>
+                <Beauty>2</Beauty>
+                <Flammability>0</Flammability>
+                <WorkToMake>2.2</WorkToMake>
+                <WorkToBuild>2.2</WorkToBuild>
+                <MeleeWeapon_CooldownMultiplier>0.8</MeleeWeapon_CooldownMultiplier>
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <allowedArchonexusCount>60</allowedArchonexusCount>
+        <tradeTags>
+            <li>Dwemer</li>
+        </tradeTags>
+    </ThingDef>
+
+<!--components-->
+    <ThingDef ParentName="ResourceBase">
+        <defName>ESCP_ControlCube</defName>
+        <label>Control Cube</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+            <texPath>Things/Items/Resources/ControlCube/ControlCube</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>32</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <allowedArchonexusCount>60</allowedArchonexusCount>
+        <tradeTags>
+            <li>Dwemer</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>ESCP_DwemerComponents</defName>
+        <label>Dwemer Components</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+            <texPath>Things/Items/Resources/DwemerComponents/DwemerComponents</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>32</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>60</allowedArchonexusCount>
+    <tradeTags>
+        <li>Dwemer</li>
+    </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>ESCP_DynamoCore</defName>
+        <label>Dynamo Core</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+            <texPath>Things/Items/Resources/DynamoCore/DynamoCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>32</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>10</allowedArchonexusCount>
+    </stuffProps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>60</allowedArchonexusCount>
+    <tradeTags>
+        <li>Dwemer</li>
+    </tradeTags>
+    </ThingDef>
+
+<!--oil-->
+    <ThingDef ParentName="ResourceBase">
+        <defName>ESCP_DwemerOil</defName>
+        <label>Dwemer Oil</label>
+        <description>PLACEHOLDER</description>
+        <possessionCount>20</possessionCount>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Items/Resources/DwemerOil</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <stackLimit>150</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <intricate>true</intricate>        <!-- Not returned to player when product made of this is smelted. -->
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>2.3</MarketValue>
+            <Mass>0.05</Mass>
+            <Flammability>2.0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>1.1</explosiveRadius>
+                <explosiveDamageType>Flame</explosiveDamageType>
+                <explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
+                <startWickOnDamageTaken>
+                    <li>Flame</li>
+                </startWickOnDamageTaken>
+                <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+                <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+                <preExplosionSpawnChance>1</preExplosionSpawnChance>
+                <wickTicks>70~150</wickTicks>
+            </li>
+        </comps>
+        <allowedArchonexusCount>100</allowedArchonexusCount>
+    </ThingDef>
+
+    
 </Defs>

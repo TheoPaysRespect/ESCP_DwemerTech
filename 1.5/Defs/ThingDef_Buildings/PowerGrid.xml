@@ -103,7 +103,7 @@
         </building>
         <costList>
             <ESCP_DwemerMetalIngot>100</ESCP_DwemerMetalIngot>
-            <ComponentIndustrial>3</ComponentIndustrial> <!--patch with mo-->
+            <ESCP_DwemerComponents>3</ESCP_DwemerComponents> <!--patch with mo-->
         </costList>
         <comps>
             <li Class="CompProperties_Power">
@@ -177,7 +177,8 @@
         <size>(6,6)</size>
         <costList>
             <ESCP_DwemerMetalIngot>340</ESCP_DwemerMetalIngot>
-            <ComponentIndustrial>8</ComponentIndustrial> <!--mo patch to medieval-->
+            <ESCP_DwemerComponents>8</ESCP_DwemerComponents> <!--mo patch to medieval-->
+            <ESCP_DynamoCore>1</ESCP_DynamoCore>
         </costList>
         <comps>
             <li Class="CompProperties_Power">
@@ -243,7 +244,7 @@
         </building>
         <costList>
             <ESCP_DwemerMetalIngot>70</ESCP_DwemerMetalIngot>
-            <ComponentIndustrial>2</ComponentIndustrial> <!--patch with mo-->
+            <ESCP_DwemerComponents>2</ESCP_DwemerComponents> <!--patch with mo-->
         </costList>
         <comps>
             <li Class="CompProperties_Battery">
@@ -481,7 +482,7 @@
         </building>
         <costList>
             <ESCP_DwemerMetalIngot>50</ESCP_DwemerMetalIngot>
-            <ComponentIndustrial>1</ComponentIndustrial> <!--mo patch-->
+            <ESCP_DwemerComponents>1</ESCP_DwemerComponents> <!--mo patch-->
         </costList>
         <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         <placeWorkers>
@@ -548,7 +549,7 @@
         </building>
         <costList>
             <ESCP_DwemerMetalIngot>50</ESCP_DwemerMetalIngot>
-            <ComponentIndustrial>1</ComponentIndustrial>            <!--mo patch-->
+            <ESCP_DwemerComponents>1</ESCP_DwemerComponents>            <!--mo patch-->
         </costList>
         <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         <placeWorkers>
