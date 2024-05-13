@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="Wall">
+        <defName>ESCP_DwemerWall</defName>
+        <label>Dwemer wall</label>
+        <description>PLACEHOLDER.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/DwarvenWall_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/DwarvenWall_UI</uiIconPath>
+        <uiIconPathsStuff Inherit="False"/>
+        <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>135</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>5</costStuffCount>
+        <stuffCategories Inherit="false"/>
+        <costList>
+            <ESCP_DwemerMetalIngot>5</ESCP_DwemerMetalIngot>
+        </costList>
+        <building>
+            <paintable>false</paintable>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/DwarvenWall_Atlas_Blueprint</texPath>
+            </blueprintGraphicData>
+        </building>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <damageMultipliers Inherit="false">
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>1</multiplier>
+            </li>
+            <li>
+                <damageDef>Thump</damageDef>
+                <multiplier>1</multiplier>
+            </li>
+        </damageMultipliers>
+        <designationHotKey Inherit="False"/>
+        <researchPrerequisites>
+            <li>ESCP_DwemerFurniture</li>
+        </researchPrerequisites>
+    </ThingDef>
+</Defs>

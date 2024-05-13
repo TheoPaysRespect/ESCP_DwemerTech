@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--accessories-->
+    <ThingDef ParentName="ApparelMakeableBase">
+        <defName>ESCP_DwemerQuiver</defName>
+        <label>Dwemer quiver</label>
+        <description>PLACEHOLDER</description>
+        <techLevel>Medieval</techLevel>
+        <graphicData>
+            <texPath>Things/Items/Accessories/DwemerQuiver</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>1</Mass>
+            <WorkToMake>4500</WorkToMake>
+            <Flammability>0</Flammability>
+            <EquipDelay>1</EquipDelay>
+            <RangedCooldownFactor>0.25</RangedCooldownFactor>
+        </statBases>
+        <costList>
+            <ESCP_DwemerMetalIngot>15</ESCP_DwemerMetalIngot>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>ESCP_DwemerArmory1</researchPrerequisite>
+            <recipeUsers>
+                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            </recipeUsers>
+        </recipeMaker>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <apparel>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+        </apparel>
+    </ThingDef>
+
+    <!--armor-->
+
+    <ThingDef Name="ESCP_DwemerArmorBase" ParentName="ArmorSmithableBase" Abstract="true">
+        <possessionCount>1</possessionCount>
+        <recipeMaker>
+            <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+            <researchPrerequisite>ESCP_DwemerArmory1</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.8</MoveSpeed>
+        </equippedStatOffsets>
+        <thingCategories>
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <tags>
+                <li>MedievalMilitary</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="ESCP_DwemerArmorBase">
+        <defName>ESCP_DwemerMail</defName>
+        <label>Dwemer mail</label>
+        <description>PLACEHOLDER</description>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Items/Armor/DwemerMail/DwemerMail</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>38000</WorkToMake>
+            <MaxHitPoints>290</MaxHitPoints>
+            <Mass>15</Mass>
+            <StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>15</EquipDelay>
+        </statBases>
+        <costList>
+            <ESCP_DwemerMetalIngot>170</ESCP_DwemerMetalIngot>
+        </costList>
+        <apparel>
+            <wornGraphicPath>Things/Items/Armor/DwemerMail/DwemerMail</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="ESCP_DwemerArmorBase">
+        <defName>ESCP_DwemerArmor</defName>
+        <label>Dwemer armor</label>
+        <description>PLACEHOLDER</description>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Items/Armor/DwemerArmor/DwemerArmor</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>38000</WorkToMake>
+            <MaxHitPoints>290</MaxHitPoints>
+            <Mass>15</Mass>
+            <StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>15</EquipDelay>
+        </statBases>
+        <costList>
+            <ESCP_DwemerMetalIngot>170</ESCP_DwemerMetalIngot>
+        </costList>
+        <apparel>
+            <wornGraphicPath>Things/Items/Armor/DwemerArmor/DwemerArmor</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+
+    <!--helmets-->
+
+    <!--aetherium-->
+        <ThingDef ParentName="ESCP_DwemerArmorBase"> <!--make it like the psycaster armors-->
+            <defName>ESCP_DwemerAetheriumArmor</defName>
+            <label>Dwemer aetherium armor</label>
+            <description>PLACEHOLDER</description>
+            <recipeMaker>
+                <skillRequirements>
+                    <Crafting>7</Crafting>
+                </skillRequirements>
+            </recipeMaker>
+            <graphicData>
+                <texPath>Things/Items/Armor/DwemerAetheriumArmor/DwemerAetheriumArmor</texPath>
+            </graphicData>
+            <statBases>
+                <WorkToMake>38000</WorkToMake>
+                <MaxHitPoints>290</MaxHitPoints>
+                <Mass>15</Mass>
+                <StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+                <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+                <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+                <EquipDelay>15</EquipDelay>
+            </statBases>
+            <costList>
+                <ESCP_DwemerMetalIngot>150</ESCP_DwemerMetalIngot>
+                <ESCP_DwemerAetheriumIngot>20</ESCP_DwemerAetheriumIngot>
+            </costList>
+            <apparel>
+                <wornGraphicPath>Things/Items/Armor/DwemerAetheriumArmor/DwemerAetheriumArmor</wornGraphicPath>
+            </apparel>
+        </ThingDef>
+</Defs>

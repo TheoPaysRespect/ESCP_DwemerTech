@@ -176,7 +176,6 @@
                 </weaponDraftedDrawOffsets>
             </li>
         </modExtensions>
-
         <tradeability>None</tradeability>
         <destroyOnDrop>true</destroyOnDrop>
         <statBases>
