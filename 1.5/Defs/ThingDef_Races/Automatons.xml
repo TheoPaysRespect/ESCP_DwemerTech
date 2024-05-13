@@ -92,27 +92,25 @@
         <description>PLACEHOLDER</description>
         <tools>
             <li>
-                <label>left blade</label>
-                <labelNoLocation>blade</labelNoLocation>
+                <label>left pincer</label>
+                <labelNoLocation>pincer</labelNoLocation>
                 <capacities>
                     <li>Cut</li>
-                    <li>Stab</li>
                 </capacities>
-                <power>20</power>
+                <power>15</power>
                 <cooldownTime>2</cooldownTime>
-                <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
                 <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
             </li>
             <li>
-                <label>right blade</label>
-                <labelNoLocation>blade</labelNoLocation>
+                <label>right pincer</label>
+                <labelNoLocation>pincer</labelNoLocation>
                 <capacities>
                     <li>Cut</li>
-                    <li>Stab</li>
                 </capacities>
-                <power>20</power>
+                <power>15</power>
                 <cooldownTime>2</cooldownTime>
-                <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
                 <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
             </li>
             <li>

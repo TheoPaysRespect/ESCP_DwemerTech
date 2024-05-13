@@ -64,22 +64,14 @@
                             <coverage>0.75</coverage>
                             <parts>
                                 <li>
-                                    <def>Blade</def>
-                                    <customLabel>left blade</customLabel>
-                                    <coverage>0.3</coverage>
-                                    <groups>
-                                        <li>LeftBlade</li>
-                                    </groups>
-                                </li>
-                                <li>
                                     <def>MechanicalHand</def>
-                                    <customLabel>left hand</customLabel>
+                                    <customLabel>left pincer</customLabel>
                                     <coverage>0.2</coverage>
                                     <height>Bottom</height>
                                     <parts>
                                         <li>
                                             <def>MechanicalFinger</def>
-                                            <customLabel>left pinky</customLabel>
+                                            <customLabel>left upper pincer</customLabel>
                                             <coverage>0.15</coverage>
                                             <groups>
                                                 <li>LeftHand</li>
@@ -87,24 +79,7 @@
                                         </li>
                                         <li>
                                             <def>MechanicalFinger</def>
-                                            <customLabel>left middle finger</customLabel>
-                                            <coverage>0.15</coverage>
-                                            <groups>
-                                                <li>LeftHand</li>
-                                                <li>MiddleFingers</li>
-                                            </groups>
-                                        </li>
-                                        <li>
-                                            <def>MechanicalFinger</def>
-                                            <customLabel>left index finger</customLabel>
-                                            <coverage>0.15</coverage>
-                                            <groups>
-                                                <li>LeftHand</li>
-                                            </groups>
-                                        </li>
-                                        <li>
-                                            <def>MechanicalFinger</def>
-                                            <customLabel>left thumb</customLabel>
+                                            <customLabel>left lower pincer</customLabel>
                                             <coverage>0.15</coverage>
                                             <groups>
                                                 <li>LeftHand</li>
@@ -127,22 +102,14 @@
                             <coverage>0.75</coverage>
                             <parts>
                                 <li>
-                                    <def>Blade</def>
-                                    <customLabel>right blade</customLabel>
-                                    <coverage>0.3</coverage>
-                                    <groups>
-                                        <li>RightBlade</li>
-                                    </groups>
-                                </li>
-                                <li>
                                     <def>MechanicalHand</def>
-                                    <customLabel>right hand</customLabel>
+                                    <customLabel>right pincer</customLabel>
                                     <coverage>0.2</coverage>
                                     <height>Bottom</height>
                                     <parts>
                                         <li>
                                             <def>MechanicalFinger</def>
-                                            <customLabel>right pinky</customLabel>
+                                            <customLabel>right upper pincer</customLabel>
                                             <coverage>0.15</coverage>
                                             <groups>
                                                 <li>RightHand</li>
@@ -150,24 +117,7 @@
                                         </li>
                                         <li>
                                             <def>MechanicalFinger</def>
-                                            <customLabel>right middle finger</customLabel>
-                                            <coverage>0.15</coverage>
-                                            <groups>
-                                                <li>RightHand</li>
-                                                <li>MiddleFingers</li>
-                                            </groups>
-                                        </li>
-                                        <li>
-                                            <def>MechanicalFinger</def>
-                                            <customLabel>right index finger</customLabel>
-                                            <coverage>0.15</coverage>
-                                            <groups>
-                                                <li>RightHand</li>
-                                            </groups>
-                                        </li>
-                                        <li>
-                                            <def>MechanicalFinger</def>
-                                            <customLabel>right thumb</customLabel>
+                                            <customLabel>right lower pincer</customLabel>
                                             <coverage>0.15</coverage>
                                             <groups>
                                                 <li>RightHand</li>
@@ -217,8 +167,7 @@
                     <height>Bottom</height>
                 </li>
                 <li>
-                    <def>Reactor</def>
-                    <label>soul gem core</label>
+                    <def>ESCP_SoulGemCore</def>
                     <coverage>0.08</coverage>
                     <depth>Inside</depth>
                 </li>
@@ -320,14 +269,13 @@
                     </parts>
                 </li>
                 <li>
-                    <def>MechanicalSphere</def>
+                    <def>ESCP_MechanicalSphere</def>
                     <customLabel>sphere</customLabel>
                     <coverage>1</coverage>
                     <height>Bottom</height>
                 </li>
                 <li>
-                    <def>Reactor</def>
-                    <label>soul gem core</label>
+                    <def>ESCP_SoulGemCore</def>
                     <coverage>0.06</coverage>
                     <depth>Inside</depth>
                 </li>
@@ -358,7 +306,7 @@
     </BodyPartGroupDef>
 
     <BodyPartDef>
-        <defName>MechanicalSphere</defName>
+        <defName>ESCP_MechanicalSphere</defName>
         <label>sphere</label>
         <description>The lower part of a sphere, source of its name.</description>
         <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
@@ -371,5 +319,19 @@
         </tags>
     </BodyPartDef>
 
+    <BodyPartDef>
+        <defName>ESCP_SoulGemCore</defName>
+        <label>soul gem core</label>
+        <hitPoints>20</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <tags>
+            <li>BloodPumpingSource</li>
+        </tags>
+        <!--<spawnThingOnRemoved>ESCP_SoulGem</spawnThingOnRemoved>-->
+    </BodyPartDef>
 
 </Defs>
