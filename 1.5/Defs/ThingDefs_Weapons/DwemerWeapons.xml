@@ -18,8 +18,8 @@
         </statBases>
         <recipeMaker>
             <researchPrerequisite>ESCP_DwemerWeapons1</researchPrerequisite>
-            <recipeUsers>
-                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            <recipeUsers Inherit="false">
+                <li>ESCP_DwemerBench</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>4</Crafting>
@@ -95,8 +95,8 @@
         <equippedAngleOffset>45</equippedAngleOffset>
         <recipeMaker>
             <researchPrerequisite>ESCP_DwemerWeapons1</researchPrerequisite>
-            <recipeUsers>
-                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            <recipeUsers Inherit="false">
+                <li>ESCP_DwemerBench</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>4</Crafting>
@@ -145,8 +145,8 @@
         <equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
             <researchPrerequisite>ESCP_DwemerWeapons1</researchPrerequisite>
-            <recipeUsers>
-                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            <recipeUsers Inherit="false">
+                <li>ESCP_DwemerBench</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>4</Crafting>
@@ -199,8 +199,8 @@
         <equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
             <researchPrerequisite>ESCP_DwemerWeapons1</researchPrerequisite>
-            <recipeUsers>
-                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            <recipeUsers Inherit="false">
+                <li>ESCP_DwemerBench</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>4</Crafting>
@@ -254,8 +254,8 @@
         <equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
             <researchPrerequisite>ESCP_DwemerWeapons1</researchPrerequisite>
-            <recipeUsers>
-                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            <recipeUsers Inherit="false">
+                <li>ESCP_DwemerBench</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>4</Crafting>
@@ -308,8 +308,8 @@
         <equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
             <researchPrerequisite>ESCP_DwemerWeapons1</researchPrerequisite>
-            <recipeUsers>
-                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            <recipeUsers Inherit="false">
+                <li>ESCP_DwemerBench</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>4</Crafting>
@@ -379,8 +379,8 @@
         <equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
             <researchPrerequisite>ESCP_DwemerWeapons1</researchPrerequisite>
-            <recipeUsers>
-                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            <recipeUsers Inherit="false">
+                <li>ESCP_DwemerBench</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>4</Crafting>
@@ -439,8 +439,8 @@
         <equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
             <researchPrerequisite>ESCP_DwemerWeapons1</researchPrerequisite>
-            <recipeUsers>
-                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            <recipeUsers Inherit="false">
+                <li>ESCP_DwemerBench</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>4</Crafting>
@@ -499,8 +499,8 @@
         <equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
             <researchPrerequisite>ESCP_DwemerWeapons1</researchPrerequisite>
-            <recipeUsers>
-                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            <recipeUsers Inherit="false">
+                <li>ESCP_DwemerBench</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>4</Crafting>

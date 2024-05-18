@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+    <ThingDef ParentName="BenchBase">
+        <defName>ESCP_DwemerBench</defName>
+        <label>Dwemer forge</label>
+        <description>Dwemer forge</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <texPath>Things/Building/Production/TableTailorElectric</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.5,1.5)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <costList>
+            <ESCP_DwemerMetalIngot>75</ESCP_DwemerMetalIngot>
+            <ESCP_DwemerComponents>2</ESCP_DwemerComponents>
+        </costList>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <WorkToBuild>2500</WorkToBuild>
+            <MaxHitPoints>180</MaxHitPoints>
+            <Flammability>0</Flammability>
+        </statBases>
+        <size>(3,1)</size>
+        <designationCategory>Production</designationCategory>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <surfaceType>Item</surfaceType>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <unpoweredWorkTableWorkSpeedFactor>0.5</unpoweredWorkTableWorkSpeedFactor>
+            <paintable>false</paintable>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>120</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Grinder</li>
+                    <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Bellows</li>
+                    <li MayRequire="dankpyon.medieval.overhaul">DankPyon_QuenchingBucket</li>
+                    <li MayRequire="dankpyon.medieval.overhaul">DankPyon_ToolRack</li>
+                </linkableFacilities>
+            </li>
+            <li Class="CompProperties_Breakdownable"/>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>ESCP_DwemerBasic</li>
+        </researchPrerequisites>
+    </ThingDef>
+</Defs>

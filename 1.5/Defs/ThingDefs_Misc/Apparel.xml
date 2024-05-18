@@ -9,6 +9,7 @@
         <graphicData>
             <texPath>Things/Items/Apparel/DwemerRobes/DwemerRobes</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <techLevel>Medieval</techLevel>
         <stuffCategories>
@@ -18,18 +19,6 @@
         <thingCategories>
             <li>ApparelMisc</li>
         </thingCategories>
-        <colorGenerator Class="ColorGenerator_Options" Inherit="false">
-            <options>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.99,0.99,0.99)</only>
-                </li>
-                <li>
-                    <weight>10</weight>
-                    <only>(0.89,0.89,0.89)</only>
-                </li>
-            </options>
-        </colorGenerator>
         <statBases>            <!--placeholder-->
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToMake>10000</WorkToMake>
@@ -128,6 +117,7 @@
         <graphicData>
             <texPath>Things/Items/Headgear/DwemerCirclet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
         </graphicData>
         <stuffCategories>
             <li>Leathery</li>

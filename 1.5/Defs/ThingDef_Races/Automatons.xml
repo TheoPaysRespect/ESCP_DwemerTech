@@ -133,14 +133,21 @@
             <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
             <detritusLeavings>
                 <li>
-                    <def>ChunkMechanoidSlag</def>
-                    <texOverrideIndex>18</texOverrideIndex>
+                    <def>ESCP_DwemerComponents</def>
                     <spawnChance>0.1</spawnChance>
                 </li>
                 <li>
-                    <def>ChunkMechanoidSlag</def>
-                    <texOverrideIndex>15</texOverrideIndex>
+                    <def>ESCP_DwemerOil</def>
                     <spawnChance>0.1</spawnChance>
+                </li>
+                <li>
+                    <def>ESCP_ChunkSlagDwemer</def>
+                    <texOverrideIndex>1</texOverrideIndex>
+                    <spawnChance>0.1</spawnChance>
+                </li>
+                <li>
+                    <def>ESCP_SoulGem</def>
+                    <spawnChance>1</spawnChance>
                 </li>
             </detritusLeavings>
         </race>
@@ -189,15 +196,25 @@
             <body>ESCP_Sphere</body>
             <baseHealthScale>0.72</baseHealthScale>
             <detritusLeavings>
-                <li>
-                    <def>ChunkMechanoidSlag</def>
-                    <texOverrideIndex>11</texOverrideIndex>
+              <li>
+                    <def>ESCP_DwemerComponents</def>
+                    <texOverrideIndex>18</texOverrideIndex>
                     <spawnChance>0.1</spawnChance>
                 </li>
                 <li>
-                    <def>ChunkMechanoidSlag</def>
-                    <texOverrideIndex>12</texOverrideIndex>
+                    <def>ESCP_DwemerOil</def>
+                    <texOverrideIndex>18</texOverrideIndex>
                     <spawnChance>0.1</spawnChance>
+                </li>
+                <li>
+                    <def>ESCP_ChunkSlagDwemer</def>
+                    <texOverrideIndex>1</texOverrideIndex>
+                    <spawnChance>0.1</spawnChance>
+                </li>
+                <li>
+                    <def>ESCP_SoulGem</def>
+                    <texOverrideIndex>15</texOverrideIndex>
+                    <spawnChance>1</spawnChance>
                 </li>
             </detritusLeavings>
             <baseBodySize>1.0</baseBodySize>

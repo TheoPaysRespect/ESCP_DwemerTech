@@ -22,8 +22,8 @@
         </costList>
         <recipeMaker>
             <researchPrerequisite>ESCP_DwemerArmory1</researchPrerequisite>
-            <recipeUsers>
-                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            <recipeUsers Inherit="false">
+                <li>ESCP_DwemerBench</li>
             </recipeUsers>
         </recipeMaker>
         <thingCategories>
@@ -47,8 +47,8 @@
     <ThingDef Name="ESCP_DwemerArmorBase" ParentName="ArmorSmithableBase" Abstract="true">
         <possessionCount>1</possessionCount>
         <recipeMaker>
-            <recipeUsers>
-                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            <recipeUsers Inherit="false">
+                <li>ESCP_DwemerBench</li>
             </recipeUsers>
             <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
             <researchPrerequisite>ESCP_DwemerArmory1</researchPrerequisite>
@@ -149,8 +149,8 @@
     <ThingDef Name="ESCP_DwemerHelmetBase" ParentName="ArmorHelmetMakeableBase" Abstract="true">
         <possessionCount>1</possessionCount>
         <recipeMaker>
-            <recipeUsers>
-                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Anvil</li>
+            <recipeUsers Inherit="false">
+                <li>ESCP_DwemerBench</li>
             </recipeUsers>
             <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
             <researchPrerequisite>ESCP_DwemerArmory1</researchPrerequisite>
@@ -185,6 +185,13 @@
         <defName>ESCP_DwemerHelmLight</defName>
         <label>dwemer light helm</label>
         <description>PLACEHOLDER</description>
+        <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_TailorsBench</li>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+        </recipeMaker>
         <statBases>
             <WorkToMake>16000</WorkToMake>
             <MaxHitPoints>150</MaxHitPoints>
@@ -208,10 +215,10 @@
 
     <ThingDef ParentName="ESCP_DwemerHelmetBase">
         <defName>ESCP_DwemerHelmA</defName>
-        <label>dwemer helm</label> <!--change-->
+        <label>dwemer helm</label>        <!--change-->
         <description>PLACEHOLDER</description>
         <statBases>
-           <WorkToMake>25000</WorkToMake>
+            <WorkToMake>25000</WorkToMake>
             <MaxHitPoints>270</MaxHitPoints>
             <Mass>3.5</Mass>
             <StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
@@ -317,16 +324,21 @@
         <label>dwemer officer light helm</label>        <!--change-->
         <description>PLACEHOLDER</description>
         <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_TailorsBench</li>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
             <researchPrerequisite Inherit="false">ESCP_DwemerArmory2</researchPrerequisite>
         </recipeMaker>
         <statBases>
-           <WorkToMake>16000</WorkToMake>
-			<MaxHitPoints>150</MaxHitPoints>
-			<Mass>3</Mass>
-			<StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>8</EquipDelay>
+            <WorkToMake>16000</WorkToMake>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Mass>3</Mass>
+            <StuffEffectMultiplierArmor>0.85</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>8</EquipDelay>
         </statBases>
         <costList>
             <ESCP_DwemerMetalIngot>80</ESCP_DwemerMetalIngot>
@@ -346,7 +358,10 @@
         <label>Dwemer aetherium armor</label>
         <description>PLACEHOLDER</description>
         <recipeMaker>
-            <researchPrerequisite>ESCP_DwemerAetherium</researchPrerequisite>
+            <researchPrerequisites Inherit="false">
+                <li>ESCP_DwemerArmory2</li>
+                <li>ESCP_DwemerAetherium</li>
+            </researchPrerequisites>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -374,10 +389,13 @@
 
     <ThingDef ParentName="ESCP_DwemerHelmetBase">
         <defName>ESCP_DwemerHelmAetherium</defName>
-        <label>dwemer aetherium helm</label>   
+        <label>dwemer aetherium helm</label>
         <description>PLACEHOLDER</description>
         <recipeMaker>
-            <researchPrerequisite>ESCP_DwemerAetherium</researchPrerequisite>
+            <researchPrerequisites Inherit="false">
+                <li>ESCP_DwemerArmory2</li>
+                <li>ESCP_DwemerAetherium</li>
+            </researchPrerequisites>
         </recipeMaker>
         <statBases>
             <WorkToMake>25000</WorkToMake>

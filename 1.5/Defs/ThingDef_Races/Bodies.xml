@@ -331,7 +331,7 @@
         <tags>
             <li>BloodPumpingSource</li>
         </tags>
-        <!--<spawnThingOnRemoved>ESCP_SoulGem</spawnThingOnRemoved>-->
+        <spawnThingOnRemoved>ESCP_SoulGem</spawnThingOnRemoved>
     </BodyPartDef>
 
 </Defs>

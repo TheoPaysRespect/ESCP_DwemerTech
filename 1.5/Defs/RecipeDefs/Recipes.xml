@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--control cube-->
+
+    <!--component-->
+    <RecipeDef>
+        <defName>ESCP_Make_ComponentDwemer</defName>
+        <label>make dwemer component</label>
+        <description>Make a dwemer component.</description>
+        <jobString>Making dwemer component.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>5000</workAmount>
+        <recipeUsers>
+            <li>ESCP_DwemerBench</li>
+        </recipeUsers>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_DwemerMetalIngot</li>
+                    </thingDefs>
+                </filter>
+                <count>12</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ESCP_DwemerMetalIngot</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ESCP_DwemerComponents>1</ESCP_DwemerComponents>
+        </products>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>0</displayPriority>
+    </RecipeDef>
+
+    <!--dynamo core-->
+    <RecipeDef>
+        <defName>ESCP_Make_DynamoCore</defName>
+        <label>make dynamo core</label>
+        <description>Make a dwemer dynamo core.</description>
+        <jobString>Making a dynamo core.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <workAmount>5000</workAmount>
+        <recipeUsers>
+            <li>ESCP_DwemerBench</li>
+        </recipeUsers>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+       <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_DwemerComponents</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_SoulGem</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>ESCP_DwemerComponents</li>
+                <li>ESCP_SoulGem</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ESCP_DynamoCore>1</ESCP_DynamoCore>
+        </products>
+        <skillRequirements>
+            <Crafting>8</Crafting>
+        </skillRequirements>
+        <workSkill>Crafting</workSkill>
+        <displayPriority>1</displayPriority>
+    </RecipeDef>
+
+    <!--oil-->
+    <RecipeDef>
+        <defName>Make_DwemerOil</defName>
+        <label>make dwemer oil</label>
+        <description>PLACEHOLDER</description>
+        <jobString>Refining dwemer oil.</jobString>
+        <effectWorking>Cremate</effectWorking>
+        <soundWorking>Recipe_Cremate</soundWorking>
+        <workAmount>2000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <recipeUsers>
+            <li>ESCP_DwemerBench</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                        <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Tar</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Chemfuel</li>
+                <li MayRequire="dankpyon.medieval.overhaul">DankPyon_Tar</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <products>
+            <ESCP_DwemerOil>20</ESCP_DwemerOil>
+        </products>
+    </RecipeDef>
+
+
+</Defs>

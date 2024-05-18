@@ -301,6 +301,7 @@
                 <darklightToggle>true</darklightToggle>
             </li>
         </comps>
+        <rotatable>false</rotatable>
     </ThingDef>
 
     <ThingDef ParentName="DwemerLampBase">
@@ -402,6 +403,7 @@
     This value isn't perfect because these radii use different algorithms
     but it matches in this case-->
         <specialDisplayRadius>5.8</specialDisplayRadius>
+        <rotatable>false</rotatable>
     </ThingDef>
 
     <ThingDef ParentName="DwemerLampBase">
@@ -441,6 +443,7 @@
                 <darklightToggle>true</darklightToggle>
             </li>
         </comps>
+        <rotatable>false</rotatable>
     </ThingDef>
 
     <!--temperature control-->

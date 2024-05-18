@@ -4,6 +4,7 @@
     <ResearchTabDef>
         <defName>ESCP_DwemerTab</defName>
         <label>ESCP Dwemer</label>
+        <description>PLACEHOLDER</description>
     </ResearchTabDef>
 
     <ResearchProjectDef Abstract="True" Name="DwemerTechBase">
@@ -90,7 +91,7 @@
         <description>PLACEHOLDER</description>
         <baseCost>4000</baseCost>
         <researchViewX>4.00</researchViewX>
-        <researchViewY>2</researchViewY>
+        <researchViewY>4</researchViewY>
         <prerequisites>
             <li>ESCP_DwemerAdvanced</li>
         </prerequisites>
@@ -114,7 +115,7 @@
         <description>PLACEHOLDER</description>
         <baseCost>4000</baseCost>
         <researchViewX>4.00</researchViewX>
-        <researchViewY>4</researchViewY>
+        <researchViewY>2</researchViewY>
         <prerequisites>
             <li>ESCP_DwemerAdvanced</li>
         </prerequisites>

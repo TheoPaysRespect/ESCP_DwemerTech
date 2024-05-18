@@ -57,7 +57,7 @@
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>60</allowedArchonexusCount>
         <tradeTags>
-            <li>Dwemer</li>
+            <li>ESCP_Dwemer</li>
         </tradeTags>
     </ThingDef>
 
@@ -116,7 +116,7 @@
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>60</allowedArchonexusCount>
         <tradeTags>
-            <li>Dwemer</li>
+            <li>ESCP_Dwemer</li>
         </tradeTags>
     </ThingDef>
 
@@ -147,7 +147,7 @@
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>60</allowedArchonexusCount>
         <tradeTags>
-            <li>Dwemer</li>
+            <li>ESCP_Dwemer</li>
         </tradeTags>
     </ThingDef>
 
@@ -177,7 +177,7 @@
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>60</allowedArchonexusCount>
         <tradeTags>
-            <li>Dwemer</li>
+            <li>ESCP_Dwemer</li>
         </tradeTags>
     </ThingDef>
 
@@ -207,7 +207,7 @@
         <allowedArchonexusCount>60</allowedArchonexusCount>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <tradeTags>
-            <li>Dwemer</li>
+            <li>ESCP_Dwemer</li>
         </tradeTags>
     </ThingDef>
 
@@ -252,5 +252,56 @@
         <allowedArchonexusCount>100</allowedArchonexusCount>
     </ThingDef>
 
+    <!--slag-->
+    <ThingDef ParentName="ChunkBase">
+        <defName>ESCP_ChunkSlagDwemer</defName>
+        <label>dwemer slag chunk</label>
+        <description>A chunk of dwemer slag. While it's useless in its current form, it can be smelted to recover dwemer ingots.</description>
+        <graphicData>
+            <texPath>Things/Item/Chunk/ChunkSlag</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <statBases>
+            <Mass>8</Mass>
+        </statBases>
+        <soundDrop>ChunkSlag_Drop</soundDrop>
+        <thingCategories>
+            <li>Chunks</li>
+        </thingCategories>
+        <smeltable>true</smeltable>
+        <smeltProducts>
+            <ESCP_DwemerMetalIngot>15</ESCP_DwemerMetalIngot>
+        </smeltProducts>
+    </ThingDef>
 
+    <!--dummy soul gem-->
+    <ThingDef ParentName="ResourceBase">
+        <defName>ESCP_SoulGem</defName>
+        <label>soul gem</label>
+        <description>PLACEHOLDER</description>
+        <graphicData>
+            <texPath>Things/Items/Resources/DynamoCore/DynamoCore</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+        <stackLimit>50</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>70</MaxHitPoints>
+            <MarketValue>32</MarketValue>
+            <Mass>0.6</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>2.0</DeteriorationRate>
+        </statBases>
+        <intricate>true</intricate>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+        <allowedArchonexusCount>60</allowedArchonexusCount>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <tradeTags>
+            <li>ESCP_Magic</li>
+        </tradeTags>
+    </ThingDef>
 </Defs>
