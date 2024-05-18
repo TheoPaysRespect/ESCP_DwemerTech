@@ -39,6 +39,7 @@
                 <li>Legs</li>
             </bodyPartGroups>
             <wornGraphicPath>Things/Items/Apparel/DwemerRobes/DwemerRobes</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>OnSkin</li>
             </layers>
@@ -64,6 +65,7 @@
             <texPath>Things/Items/Headgear/DwemerCapC</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
+            <drawSize>(0.8,0.8)</drawSize>
         </graphicData>
         <techLevel>Medieval</techLevel>
         <stuffCategories>
@@ -118,6 +120,7 @@
             <texPath>Things/Items/Headgear/DwemerCirclet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
+            <drawSize>(0.8,0.8)</drawSize>
         </graphicData>
         <stuffCategories>
             <li>Leathery</li>
@@ -144,6 +147,7 @@
                 <li>UpperHead</li>
             </bodyPartGroups>
             <wornGraphicPath>Things/Items/Headgear/DwemerCirclet</wornGraphicPath>
+            <useWornGraphicMask>true</useWornGraphicMask>
             <layers>
                 <li>Overhead</li>
             </layers>
