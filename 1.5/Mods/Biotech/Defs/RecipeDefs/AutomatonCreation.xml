@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef Name="ESCP_AutomatonCreationBase" Abstract="True">
+        <jobString>making automaton.</jobString>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <effectWorking>Cook</effectWorking>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+        <researchPrerequisite>ESCP_DwemerIntermediate</researchPrerequisite>
+        <recipeUsers>
+            <li>ESCP_AutomatonAssembler</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_SoulGem</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+    </RecipeDef>
+
+    <RecipeDef ParentName="ESCP_AutomatonCreationBase">
+        <defName>ESCP_Spider</defName>
+        <label>construct dwemer spider</label>
+        <description>Construct a dwemer spider.</description>
+        <workAmount>32000</workAmount>
+        <products>
+            <ESCP_Spider>1</ESCP_Spider>
+        </products>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_DwemerMetalIngot</li>
+                    </thingDefs>
+                </filter>
+                <count>50</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_DwemerComponents</li>
+                    </thingDefs>
+                </filter>
+                <count>2</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_DwemerOil</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+        </ingredients>
+        <descriptionHyperlinks>
+            <ThingDef>ESCP_Spider</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="ESCP_AutomatonCreationBase">
+        <defName>ESCP_SphereMelee</defName>
+        <label>construct dwemer melee sphere</label>
+        <description>Construct a dwemer melee sphere.</description>
+        <workAmount>64000</workAmount>
+        <products>
+            <ESCP_SphereMelee>1</ESCP_SphereMelee>
+        </products>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_DwemerMetalIngot</li>
+                    </thingDefs>
+                </filter>
+                <count>120</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_DwemerComponents</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_DwemerOil</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <descriptionHyperlinks>
+            <ThingDef>ESCP_SphereMelee</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+    <RecipeDef ParentName="ESCP_AutomatonCreationBase">
+        <defName>ESCP_SphereRanged</defName>
+        <label>construct dwemer ranged sphere</label>
+        <description>Construct a dwemer ranged sphere.</description>
+        <workAmount>64000</workAmount>
+        <products>
+            <ESCP_SphereRanged>1</ESCP_SphereRanged>
+        </products>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_DwemerMetalIngot</li>
+                    </thingDefs>
+                </filter>
+                <count>120</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_DwemerComponents</li>
+                    </thingDefs>
+                </filter>
+                <count>4</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>ESCP_DwemerOil</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+        </ingredients>
+        <descriptionHyperlinks>
+            <ThingDef>ESCP_SphereRanged</ThingDef>
+        </descriptionHyperlinks>
+    </RecipeDef>
+
+</Defs>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <WorkGiverDef>
+        <defName>ESCP_WorkDwemerForge</defName>
+        <label>work dwemer forge</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Smithing</workType>
+        <priorityInType>115</priorityInType>
+        <fixedBillGiverDefs>
+            <li>ESCP_DwemerBench</li>
+        </fixedBillGiverDefs>
+        <verb>smith</verb>
+        <gerund>smithing at</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>ESCP_WorkDwemerGestator</defName>
+        <label>operate automaton assembler</label>
+        <giverClass>WorkGiver_DoBill</giverClass>
+        <workType>Smithing</workType>
+        <priorityInType>215</priorityInType>
+        <fixedBillGiverDefs>
+            <li MayRequire="ludeon.rimworld.biotech">ESCP_AutomatonAssembler</li>
+        </fixedBillGiverDefs>
+        <verb>operate</verb>
+        <gerund>operating</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+</Defs>

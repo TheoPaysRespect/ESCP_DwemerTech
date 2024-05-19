@@ -12,6 +12,7 @@
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>5000</workAmount>
+        <researchPrerequisite>ESCP_DwemerBasic</researchPrerequisite>
         <recipeUsers>
             <li>ESCP_DwemerBench</li>
         </recipeUsers>
@@ -51,6 +52,7 @@
         <effectWorking>Cook</effectWorking>
         <soundWorking>Recipe_Machining</soundWorking>
         <workAmount>5000</workAmount>
+        <researchPrerequisite>ESCP_DwemerAdvanced</researchPrerequisite>
         <recipeUsers>
             <li>ESCP_DwemerBench</li>
         </recipeUsers>
@@ -102,6 +104,7 @@
         <recipeUsers>
             <li>ESCP_DwemerBench</li>
         </recipeUsers>
+        <researchPrerequisite>ESCP_DwemerIntermediate</researchPrerequisite>
         <ingredients>
             <li>
                 <filter>
@@ -123,6 +126,4 @@
             <ESCP_DwemerOil>20</ESCP_DwemerOil>
         </products>
     </RecipeDef>
-
-
 </Defs>

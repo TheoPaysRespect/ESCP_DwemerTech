@@ -12,12 +12,11 @@
             <ComfyTemperatureMax>250</ComfyTemperatureMax>
             <MeatAmount>0</MeatAmount>
             <ArmorRating_Heat>4.00</ArmorRating_Heat>
-            <!--<BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">1</BandwidthCost>
+            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">1</BandwidthCost>
             <ControlTakingTime MayRequire="Ludeon.RimWorld.Biotech">12</ControlTakingTime>
             <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
             <MechEnergyLossPerHP MayRequire="Ludeon.RimWorld.Biotech">0.33</MechEnergyLossPerHP>
-            <WastepacksPerRecharge MayRequire="Ludeon.RimWorld.Biotech">5</WastepacksPerRecharge>
-            <WorkSpeedGlobal MayRequire="Ludeon.RimWorld.Biotech">0.5</WorkSpeedGlobal>-->
+            <WorkSpeedGlobal MayRequire="Ludeon.RimWorld.Biotech">0.5</WorkSpeedGlobal>
         </statBases>
         <race>
             <fleshType>Mechanoid</fleshType>
@@ -26,19 +25,39 @@
             <foodType>None</foodType>
             <lifeExpectancy>2500</lifeExpectancy>
             <bloodDef>Filth_MachineBits</bloodDef>
-            <!--<nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>-->
+            <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>
             <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
             <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
-            <!--<thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>-->
+            <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
+            <mechWeightClass>Light</mechWeightClass>
+            <detritusLeavings>
+                <li>
+                    <def>ESCP_DwemerComponents</def>
+                    <spawnChance>0.1</spawnChance>
+                </li>
+                <li>
+                    <def>ESCP_DwemerOil</def>
+                    <spawnChance>0.1</spawnChance>
+                </li>
+                <li>
+                    <def>ESCP_ChunkSlagDwemer</def>
+                    <texOverrideIndex>1</texOverrideIndex>
+                    <spawnChance>0.1</spawnChance>
+                </li>
+                <li>
+                    <def>ESCP_SoulGem</def>
+                    <spawnChance>0.1</spawnChance>
+                </li>
+            </detritusLeavings>
         </race>
         <comps>
-            <!--<li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_OverseerSubject">
+            <li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_OverseerSubject">
                 <needsOverseerEffect>MechUncontrolled</needsOverseerEffect>
                 <delayUntilFeralCheck>60000</delayUntilFeralCheck>
                 <feralMtbDays>10</feralMtbDays>
                 <feralCascadeRadialDistance>25</feralCascadeRadialDistance>
             </li>
-            <li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_MechRepairable" />-->
+            <li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_MechRepairable" />
         </comps>
     </ThingDef>
 
@@ -47,7 +66,7 @@
         <aiAvoidCover>true</aiAvoidCover>
         <destroyGearOnDrop>true</destroyGearOnDrop>
         <canStrip>false</canStrip>
-        <!--<minGenerationAge MayRequire="Ludeon.RimWorld.Biotech">200</minGenerationAge>-->
+        <minGenerationAge MayRequire="Ludeon.RimWorld.Biotech">200</minGenerationAge>
         <forceNormalGearQuality>true</forceNormalGearQuality>
     </PawnKindDef>
 
@@ -131,29 +150,14 @@
             <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
             <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
             <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
-            <detritusLeavings>
-                <li>
-                    <def>ESCP_DwemerComponents</def>
-                    <spawnChance>0.1</spawnChance>
-                </li>
-                <li>
-                    <def>ESCP_DwemerOil</def>
-                    <spawnChance>0.1</spawnChance>
-                </li>
-                <li>
-                    <def>ESCP_ChunkSlagDwemer</def>
-                    <texOverrideIndex>1</texOverrideIndex>
-                    <spawnChance>0.1</spawnChance>
-                </li>
-                <li>
-                    <def>ESCP_SoulGem</def>
-                    <spawnChance>1</spawnChance>
-                </li>
-            </detritusLeavings>
+            <mechEnabledWorkTypes MayRequire="Ludeon.RimWorld.Biotech">
+                <li>Hauling</li>
+                <li>Construction</li>
+            </mechEnabledWorkTypes>
         </race>
-        <!--<statBases>
-            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
-        </statBases>-->
+        <statBases>
+            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">1</BandwidthCost>
+        </statBases>
     </ThingDef>
 
     <PawnKindDef ParentName="ESCP_BaseAutomatonKind">
@@ -195,28 +199,6 @@
             <thinkTreeMain>Mechanoid</thinkTreeMain>
             <body>ESCP_Sphere</body>
             <baseHealthScale>0.72</baseHealthScale>
-            <detritusLeavings>
-              <li>
-                    <def>ESCP_DwemerComponents</def>
-                    <texOverrideIndex>18</texOverrideIndex>
-                    <spawnChance>0.1</spawnChance>
-                </li>
-                <li>
-                    <def>ESCP_DwemerOil</def>
-                    <texOverrideIndex>18</texOverrideIndex>
-                    <spawnChance>0.1</spawnChance>
-                </li>
-                <li>
-                    <def>ESCP_ChunkSlagDwemer</def>
-                    <texOverrideIndex>1</texOverrideIndex>
-                    <spawnChance>0.1</spawnChance>
-                </li>
-                <li>
-                    <def>ESCP_SoulGem</def>
-                    <texOverrideIndex>15</texOverrideIndex>
-                    <spawnChance>1</spawnChance>
-                </li>
-            </detritusLeavings>
             <baseBodySize>1.0</baseBodySize>
             <lifeStageAges>
                 <li>
@@ -257,9 +239,9 @@
         <defName>ESCP_SphereRanged</defName>
         <label>sphere</label>
         <description>PLACEHOLDER</description>    
-        <!--<statBases>
-            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">3</BandwidthCost>
-        </statBases>-->
+        <statBases>
+            <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
+        </statBases>
     </ThingDef>
 
     <PawnKindDef ParentName="ESCP_BaseAutomatonKind">
@@ -293,9 +275,9 @@
         <defName>ESCP_SphereMelee</defName>
         <label>sphere</label>
         <description>PLACEHOLDER</description>
-        <!--<statBases>
+        <statBases>
             <BandwidthCost MayRequire="Ludeon.RimWorld.Biotech">2</BandwidthCost>
-        </statBases>-->
+        </statBases>
     </ThingDef>
 
     <PawnKindDef ParentName="ESCP_BaseAutomatonKind">

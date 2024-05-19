@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="ESCP_DwemerHelmetBase">
+        <defName>ESCP_DwemerHelmMechanitor</defName>
+        <label>dwemer engineer helm</label>        <!--change-->
+        <description>PLACEHOLDER</description>
+        <recipeMaker>
+            <researchPrerequisite Inherit="false">ESCP_DwemerIntermediate</researchPrerequisite>
+        </recipeMaker>
+        <statBases>
+            <WorkToMake>25000</WorkToMake>
+            <MaxHitPoints>270</MaxHitPoints>
+            <Mass>3.5</Mass>
+            <StuffEffectMultiplierArmor>1.05</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>10</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MechBandwidth>6</MechBandwidth>
+            <MechControlGroups>2</MechControlGroups>
+        </equippedStatOffsets>
+        <costList>
+            <ESCP_DwemerMetalIngot>80</ESCP_DwemerMetalIngot>
+        </costList>
+        <graphicData>
+            <texPath>Things/Items/Headgear/DwemerEngineerHelm</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <apparel>
+            <wornGraphicPath>Things/Items/Headgear/DwemerEngineerHelm</wornGraphicPath>
+        </apparel>
+    </ThingDef>
+</Defs>

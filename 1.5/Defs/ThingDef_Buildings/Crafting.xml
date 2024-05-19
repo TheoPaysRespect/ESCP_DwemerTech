@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    
     <ThingDef ParentName="BenchBase">
         <defName>ESCP_DwemerBench</defName>
         <label>Dwemer forge</label>
